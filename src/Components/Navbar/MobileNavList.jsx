@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 
-import logo from '../../images/logos/fat-logo.jpg'
+import logo from '../../images/logos/fat-logo-PhotoRoom.png-PhotoRoom.png'
 
 function MobileNavList(props) {
   return (

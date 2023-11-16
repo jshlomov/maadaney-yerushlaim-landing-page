@@ -44,10 +44,11 @@
   align-items: center;
   color: white;
   text-decoration: none;
+  padding-left: 2%;
 }
 
 .Navbar .NavLogo img {
-  width: 55px;
+  width: 50px;
   height: 60px;
   color: white;
   filter: brightness(0.01) invert(0.9) sepia(0.1) hue-rotate(100deg)
@@ -57,7 +58,7 @@
 .Navbar .NavLogo h3 {
   font-size: 12px;
   text-align: center;
-  min-width: 100px;
+  min-width: 70px;
 }
 
 /*///////// logo hover /////////*/
@@ -115,7 +116,7 @@
   background-color: #555;
 }
 
-.MobileNavList ul li:hover a{
+.MobileNavList ul li:hover a {
   color: #ec8e18;
   opacity: 1;
 }
@@ -124,17 +125,25 @@
   background-color: #f8ae4e;
 }
 
-.bgColor .MobileNavList ul li:hover a{
+.bgColor .MobileNavList ul li:hover a {
   color: #ec8e18;
   opacity: 1;
 }
 
-.MobileNavList .logoAndDescription {
-  
-}
-.MobileNavList .logoAndDescription img{
-  width: 100%;
+/* ///// MobileNavList logo inside ////// */
 
+.MobileNavList .logoAndDescription {
+}
+.MobileNavList .logoAndDescription img {
+  width: 100%;
+  filter: brightness(0.01) invert(0.99) sepia(0.1) hue-rotate(100deg)
+  saturate(200%);
+  transition: all 1s;
+}
+
+.bgColor .logoAndDescription img {
+  filter: none;
+  transition: all 1s;
 }
 
 /* //// NavList and MobileNavList hover two kinds */
@@ -192,20 +201,14 @@
   .NavList {
     display: flex;
     width: 50%;
-    /* padding-right: 10%; */
-    /* background-color: green; */
+
   }
 
   .NavList ul {
     display: flex;
     justify-content: space-around;
     list-style: none;
-    flex-shrink: 1;
-    /* background-color: blue; */
     width: 100%;
-  }
-
-  .NavList ul li {
   }
 
   .NavList ul li a {
@@ -217,5 +220,10 @@
   .Navbar .NavPhone {
     font-size: 18px;
   }
-  
+}
+
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+  .NavList {
+    width: 62%;
+  }
 }
