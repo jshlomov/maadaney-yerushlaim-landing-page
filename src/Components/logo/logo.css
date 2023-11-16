@@ -1,0 +1,41 @@
+/* //////// logo /////// */
+
+.Logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  padding-left: 3%;
+}
+
+.Logo img {
+  width: 55px;
+  height: 60px;
+  color: white;
+  filter: brightness(0.01) invert(0.9) sepia(0.1) hue-rotate(100deg)
+    saturate(200%);
+}
+
+.Logo h3 {
+  font-size: 12px;
+  text-align: center;
+  min-width: 100px;
+}
+
+/*///////// logo hover /////////*/
+
+.Logo:hover img {
+  filter: invert(71%) sepia(36%) saturate(4331%) hue-rotate(351deg)
+    brightness(96%) contrast(92%);
+}
+.Logo:hover h3 {
+  color: #ec8e18;
+}
+
+.bgColor .Logo:hover img,
+.bgColor .Logo:hover h3 {
+  filter: invert(21%) sepia(0%) saturate(0%) hue-rotate(352deg) brightness(97%)
+    contrast(102%);
+  color: #333;
+}

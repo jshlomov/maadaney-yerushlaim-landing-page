@@ -1,0 +1,45 @@
+.Carousel {
+  position: relative;
+  width: 100%;
+  height: 90dvh;
+}
+
+.Carousel img {
+  width: 100%;
+  height: 90dvh;
+}
+
+.Carousel .leftArrow {
+  left: 5px;
+}
+.Carousel .rightArrow {
+  right: 5px;
+}
+
+.Carousel .rightArrow,
+.Carousel .leftArrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 45dvh;
+  border-radius: 50%;
+  background-color: #eee;
+  opacity: 0.5;
+}
+
+.Carousel .rightArrow:hover,
+.Carousel .leftArrow:hover {
+  opacity: 0.85;
+  background-color: #ddd;
+}
+
+.Carousel .rightArrow img,
+.Carousel .leftArrow img {
+  width: 30px;
+  height: 30px;
+}
+
+
