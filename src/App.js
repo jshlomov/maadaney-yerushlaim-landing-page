@@ -4,8 +4,6 @@ import { useState } from "react";
 import Crousel from "./Components/About/Carousel";
 import FoodForShabat from "./Components/FoodForShabat/FoodForShabat";
 import Navbar from "./Components/Navbar/Navbar";
-import logo from "./Components/logo/logo";
-import mylogo from "./images/logo-removebg-preview.png";
 
 
 function App() {
@@ -34,7 +32,6 @@ function App() {
       <Navbar open={open} setOpen={setOpen} />
       <div onClick={() => setOpen(false)}>
         <Crousel />
-        <logo logo={mylogo} text="מעדני ירושלים" />
         <FoodForShabat />
       </div>
     </div>

@@ -1,14 +1,15 @@
 import React from "react";
 import NavList from "./NavList";
 import "./Navbar.css";
-import logo from "../../images/logo-removebg-preview.png";
+
+import logo from "../../images/logos/logo-wbg.png";
+import watsaapIcon from "../../images/icons/whatsapp.png";
 import MobileNavList from "./MobileNavList";
 
 import { CgMenuRound } from "react-icons/cg";
 import { CgCloseO } from "react-icons/cg";
 
 function Navbar(props) {
-
   const HamburgerIcon = (
     <CgMenuRound
       className="Hamburger"
@@ -49,6 +50,10 @@ function Navbar(props) {
       {!props.open ? HamburgerIcon : CloseIcon}
       {props.open && <MobileNavList close={() => props.setOpen(!props.open)} />}
       <NavList />
+      <a className="NavPhone" href="https://wa.me/+972586707014">
+        058-6707014
+        <img src={watsaapIcon}></img>
+      </a>
       <a className="NavLogo" href="#Carousel">
         <img src={logo} alt="logo" />
         <h3>מעדני ירושלים</h3>

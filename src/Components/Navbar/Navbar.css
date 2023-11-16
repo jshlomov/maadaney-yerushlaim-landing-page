@@ -132,12 +132,38 @@
 
 .NavList ul li a:hover {
   color: #ec8e18;
-  font-size: 16.5px;
+  transform: scale(1.5);
   opacity: 1;
 }
 
 .bgColor .NavList ul li a:hover,
 .bgColor .MobileNavList ul li a:hover {
+  color: #333;
+}
+
+/* ////// phoneSection ///////// */
+
+.Navbar .NavPhone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 150px;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  transition: 0.5s ease-in;
+}
+
+.Navbar .NavPhone img {
+  width: 28px;
+}
+
+.Navbar .NavPhone:hover {
+  transform: scale(1.05);
+  color: #ec8e18;
+}
+
+.bgColor .NavPhone:hover {
   color: #333;
 }
 
@@ -156,7 +182,7 @@
 
   .NavList {
     display: flex;
-    width: 100%;
+    width: 60%;
   }
 
   .NavList ul {
@@ -164,8 +190,11 @@
     flex-direction: row-reverse;
     justify-content: space-around;
     list-style: none;
-    flex-basis: 500px;
-    padding-right: 10%;
+    padding-right: 12%;
+  }
+
+  .NavList ul li {
+    padding-left: 60px;
   }
 
   .NavList ul li a {

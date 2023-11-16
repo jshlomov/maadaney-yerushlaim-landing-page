@@ -4,9 +4,9 @@ import { useState } from "react";
 import rightArrow from "../../images/right-arrow.png";
 import leftArrow from "../../images/left-arrow.png";
 
-import img1 from "../../images/fishesImage1.jpg";
-import img2 from "../../images/foodForShabat.jpeg";
-import img3 from "../../images/hamin.jpg";
+import img1 from "../../images/salomon1.jpg";
+import img2 from "../../images/potatos1.jpg";
+import img3 from "../../images/meet1.jpg";
 
 function Crousel() {
   let imagesArr = [
