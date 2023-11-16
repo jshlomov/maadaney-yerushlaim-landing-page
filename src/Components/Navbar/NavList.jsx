@@ -16,6 +16,12 @@ function NavList() {
           <a href="">אירועים</a>
         </li>
         <li>
+          <a href="">קידושים</a>
+        </li>
+        <li>
+          <a href="">סיטונאות</a>
+        </li>
+        <li>
           <a href="">יצירת קשר</a>
         </li>
       </ul>

@@ -44,7 +44,6 @@
   align-items: center;
   color: white;
   text-decoration: none;
-  padding-left: 3%;
 }
 
 .Navbar .NavLogo img {
@@ -82,12 +81,14 @@
 
 .MobileNavList {
   position: absolute;
-  height: 100dvh;
+  height: 90dvh;
   width: 50dvw;
   top: 76px;
   background-color: #444;
   transition: 1s;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .bgColor .MobileNavList {
@@ -128,6 +129,14 @@
   opacity: 1;
 }
 
+.MobileNavList .logoAndDescription {
+  
+}
+.MobileNavList .logoAndDescription img{
+  width: 100%;
+
+}
+
 /* //// NavList and MobileNavList hover two kinds */
 
 .NavList ul li a:hover {
@@ -147,15 +156,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 150px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   transition: 0.5s ease-in;
 }
 
 .Navbar .NavPhone img {
   width: 28px;
+  padding-right: 7px;
 }
 
 .Navbar .NavPhone:hover {
@@ -182,19 +191,21 @@
 
   .NavList {
     display: flex;
-    width: 60%;
+    width: 50%;
+    /* padding-right: 10%; */
+    /* background-color: green; */
   }
 
   .NavList ul {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-around;
     list-style: none;
-    padding-right: 12%;
+    flex-shrink: 1;
+    /* background-color: blue; */
+    width: 100%;
   }
 
   .NavList ul li {
-    padding-left: 60px;
   }
 
   .NavList ul li a {
@@ -203,4 +214,8 @@
     transition: 0.5s ease;
     color: white;
   }
+  .Navbar .NavPhone {
+    font-size: 18px;
+  }
+  
 }
