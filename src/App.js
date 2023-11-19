@@ -4,6 +4,7 @@ import { useState } from "react";
 import Crousel from "./Components/About/Carousel";
 import FoodForShabat from "./Components/FoodForShabat/FoodForShabat";
 import Navbar from "./Components/Navbar/Navbar";
+import BackCrousel from "./Components/About/BackCarousel";
 
 
 function App() {
@@ -31,7 +32,8 @@ function App() {
     <div className="App">
       <Navbar open={open} setOpen={setOpen} />
       <div onClick={() => setOpen(false)}>
-        <Crousel />
+        {/* <Crousel /> */}
+        <BackCrousel />
         <FoodForShabat />
       </div>
     </div>

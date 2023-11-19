@@ -1,5 +1,3 @@
-// Irrelevant finaly I used the BackCarousel Component
-
 import "./Carousel.css";
 
 import { useState } from "react";
@@ -10,12 +8,8 @@ import img1 from "../../images/salomon1.jpg";
 import img2 from "../../images/potatos1.jpg";
 import img3 from "../../images/meet1.jpg";
 
-function Crousel() {
-  let imagesArr = [
-    <img className="currImg" src={img1}></img>,
-    <img className="currImg" src={img2}></img>,
-    <img className="currImg" src={img3}></img>,
-  ];
+function BackCrousel() {
+  let imagesArr = [img1, img2, img3];
 
   const [currentImage, setCurrentImage] = useState({
     index: 0,
@@ -34,8 +28,11 @@ function Crousel() {
   };
 
   return (
-    <div id="Carousel" className="Carousel ">
-      {currentImage.curr}
+    <div
+      id="Carousel"
+      className="Carousel"
+      style={{ backgroundImage: `url(${currentImage.curr})` }}
+    >
       <div className="leftArrow" onClick={onClickLeft}>
         <img src={leftArrow} alt="" />
       </div>
@@ -46,4 +43,4 @@ function Crousel() {
   );
 }
 
-export default Crousel;
+export default BackCrousel;
