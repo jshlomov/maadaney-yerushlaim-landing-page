@@ -136,9 +136,12 @@
 }
 .MobileNavList .logoAndDescription img {
   width: 100%;
+  height: 100%;
+  /* max-width: 35dvw; */
   filter: brightness(0.01) invert(0.99) sepia(0.1) hue-rotate(100deg)
   saturate(200%);
   transition: all 1s;
+  padding-bottom: 5%;
 }
 
 .bgColor .logoAndDescription img {
