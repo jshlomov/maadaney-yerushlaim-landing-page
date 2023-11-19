@@ -5,6 +5,7 @@ import Crousel from "./Components/About/Carousel";
 import FoodForShabat from "./Components/FoodForShabat/FoodForShabat";
 import Navbar from "./Components/Navbar/Navbar";
 import BackCrousel from "./Components/About/BackCarousel";
+import ContactDetails from "./Components/ContactDetails/ContactDetails";
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
         {/* <Crousel /> */}
         <BackCrousel />
         <FoodForShabat />
+        <ContactDetails />
       </div>
     </div>
   );

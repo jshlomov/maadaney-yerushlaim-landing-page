@@ -1,0 +1,67 @@
+.ContactDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+.ContactDetails .ContactDetailsCardsWrapper {
+  width: 70dvw;
+  padding-bottom: 25px;
+}
+
+.ContactDetails .ContactDetailsCardsWrapper h1 {
+  color: white;
+  padding-bottom: 20px;
+}
+
+.ContactDetails .ContactDetailsCardsWrapper .ContactDetailsCard {
+  width: 200px;
+  display: flex;
+  padding-top: 15px;
+  text-decoration: none;
+}
+
+.ContactDetails .ContactDetailsCardsWrapper .ContactDetailsCard img {
+  height: 23px;
+  width: 23px;
+}
+
+.ContactDetails .ContactDetailsCardsWrapper .ContactDetailsCard p {
+  color: white;
+  font-size: 14px;
+  padding-right: 20px;
+}
+
+.ContactDetails .ContactDetailsMap .ConMap {
+  height: 50dvh;
+  width: 70dvw;
+}
+
+@media screen and (min-width: 900px) {
+  .ContactDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .ContactDetails .ContactDetailsCardsWrapper {
+    width: 35dvw;
+    padding-bottom: 20px;
+    font-size: larger;
+  }
+
+  .ContactDetails .ContactDetailsCardsWrapper .ContactDetailsCard {
+    width: 250px;
+  }
+
+  .ContactDetails .ContactDetailsCardsWrapper .ContactDetailsCard p {
+    font-size: 18px;
+  }
+
+  .ContactDetails .ContactDetailsMap .ConMap {
+    height: 50dvh;
+    width: 50dvw;
+    padding-left: 10%;
+  }
+}
