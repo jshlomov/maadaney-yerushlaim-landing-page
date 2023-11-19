@@ -1,5 +1,6 @@
 import React from "react";
 import "./FoodForShabat.css";
+import file from '../../files/tafrit.jpg';
 
 
 function FoodForShabat(props) {

@@ -8,7 +8,7 @@ function MobileNavList(props) {
     <nav className="MobileNavList animIn">
       <ul>
         <li>
-          <a href="" onClick={props.close}>
+          <a href="#Carousel" onClick={props.close}>
             אודות
           </a>
         </li>
@@ -34,7 +34,7 @@ function MobileNavList(props) {
           </a>
         </li>
         <li>
-          <a href="" onClick={props.close}>
+          <a href="#ContactDetails" onClick={props.close}>
             יצירת קשר
           </a>
         </li>

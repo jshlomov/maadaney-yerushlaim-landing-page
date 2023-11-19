@@ -5,11 +5,14 @@ import "./Navbar.css";
 import logo from "../../images/logos/logo-wbg.png";
 import watsaapIcon from "../../images/icons/whatsapp.png";
 import MobileNavList from "./MobileNavList";
+import file from "../../files/tafrit.jpg";
 
 import { CgMenuRound } from "react-icons/cg";
 import { CgCloseO } from "react-icons/cg";
+import { MdRestaurantMenu } from "react-icons/md";
 
 function Navbar(props) {
+
   const HamburgerIcon = (
     <CgMenuRound
       className="Hamburger"
@@ -33,10 +36,7 @@ function Navbar(props) {
   function changeColor() {
     let a = document.querySelector(".Navbar");
 
-    if (
-      window.scrollY > 30 &&
-      window.scrollY < window.innerHeight - window.innerHeight * 0.2
-    ) {
+    if (window.scrollY > 30 && window.scrollY < window.innerHeight) {
       a.classList.add("bgColor");
     } else {
       a.classList.remove("bgColor");
@@ -53,6 +53,10 @@ function Navbar(props) {
       <a className="NavPhone" href="https://wa.me/+972586707014">
         058-6707014
         <img src={watsaapIcon}></img>
+      </a>
+      <a className="menuDownload" href={file} download>
+        להורדת התפריט
+        <MdRestaurantMenu size={'30px'} style={{paddingRight: '5px'}}/>
       </a>
       <a className="NavLogo" href="#Carousel">
         <img src={logo} alt="logo" />

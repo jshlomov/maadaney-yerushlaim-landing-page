@@ -6,7 +6,7 @@ function NavList() {
     <nav className="NavList">
       <ul>
         <li>
-          <a href="">אודות</a>
+          <a href="#Carousel">אודות</a>
         </li>
 
         <li>
@@ -22,7 +22,7 @@ function NavList() {
           <a href="">סיטונאות</a>
         </li>
         <li>
-          <a href="">יצירת קשר</a>
+          <a href="#ContactDetails">יצירת קשר</a>
         </li>
       </ul>
     </nav>

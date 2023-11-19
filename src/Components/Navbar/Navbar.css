@@ -188,6 +188,35 @@
   color: #333;
 }
 
+/* menuDowload */
+
+.Navbar .menuDownload {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: 0.5s ease-in;
+}
+
+.Navbar .menuDownload:hover {
+  transform: scale(1.05);
+  color: #ec8e18;
+}
+
+.bgColor .menuDownload:hover {
+  color: #333;
+}
+
+@media screen and (max-width:450px) {
+  .Navbar .menuDownload {
+    display: none;
+  }
+}
+
+
+
+
 /* /////// big screen ////// */
 
 @media screen and (min-width: 900px) {
@@ -228,5 +257,9 @@
 @media screen and (min-width: 900px) and (max-width: 1100px) {
   .NavList {
     width: 62%;
+  }
+
+  .Navbar .menuDownload {
+    display: none;
   }
 }
