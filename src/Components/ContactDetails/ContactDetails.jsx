@@ -9,7 +9,10 @@ import whatsappIcon from "../../images/icons/whatsapp.png";
 function ContactDetails() {
   return (
     <div className="ContactDetails">
-      <div id="ContactDetails" style={{position: 'relative', top: '-85px'}}></div>
+      <div
+        id="ContactDetails"
+        style={{ position: "relative", top: "-85px" }}
+      ></div>
       <div className="ContactDetailsCardsWrapper">
         <h1>צרו איתנו קשר!</h1>
 
@@ -35,7 +38,7 @@ function ContactDetails() {
         </a>
         <a
           className="ContactDetailsCard"
-          href="https://maps.app.goo.gl/U7yz2Lofg5PepUKn6"
+          href="https://maps.app.goo.gl/YH55SbyRaYC69snn9"
           target="_blank"
         >
           <img src={mapIcon} alt="map icon" />
@@ -45,11 +48,11 @@ function ContactDetails() {
       <div className="ContactDetailsMap">
         <iframe
           className="ConMap"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.508275755008!2d34.825948999999994!3d32.082546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4a31303754cd%3A0x733401de70557616!2z15nXqNeV16nXnNeZ150gNjksINeR16DXmSDXkdeo16c!5e0!3m2!1siw!2sil!4v1700393948797!5m2!1siw!2sil"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.5085901378075!2d34.8260076!3d32.0825375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4a312ff6763d%3A0x2611ca7ea7a0d05!2z157XoteT16DXmSDXmdeo15XXqdec15nXnQ!5e0!3m2!1siw!2sil!4v1700405246198!5m2!1siw!2sil"
           style={{ border: 0 }}
-          allowfullscreen=""
+          allowFullScreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
     </div>
