@@ -1,6 +1,6 @@
 import React from 'react'
 
-function foodCard() {
+function foodCard1() {
   return (
     <div>
         
@@ -9,4 +9,4 @@ function foodCard() {
   )
 }
 
-export default foodCard
+export default foodCard1

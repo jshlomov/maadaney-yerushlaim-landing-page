@@ -8,7 +8,7 @@ import leftArrow from "../../images/left-arrow.png";
 
 import img1 from "../../images/salomon1.jpg";
 import img2 from "../../images/potatos1.jpg";
-import img3 from "../../images/meet1.jpg";
+import img3 from "../../images/appleCake.jpg";
 
 function Crousel() {
   let imagesArr = [

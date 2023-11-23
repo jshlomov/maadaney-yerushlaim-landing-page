@@ -1,0 +1,59 @@
+.KidushCardContainer {
+  border-radius: 20%;
+  margin: 20px 30px;
+  height: 65dvh;
+  position: relative;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 1s ease-in;
+  flex: 1 0 250px;
+  max-width: 480px;
+}
+
+.KidushCardContainer .KidushCardImg,
+.KidushCardContainer .KidishCardText {
+  border-radius: 10%;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.KidushCardContainer .KidushCardImg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+}
+
+.KidushCardContainer .KidushCardImg h1 {
+  font-size: 50px;
+  width: 200px;
+  text-align: center;
+  color: white;
+  /* background-color: aqua; */
+
+}
+
+.KidushCardContainer .KidishCardText {
+  background-color: beige;
+  transform: rotateY(180deg);
+}
+
+.KidushCardContainer .KidishCardText h1 {
+  border-width: 5px;
+}
+
+.KidushCardContainer .KidishCardText ul {
+  width: 80%;
+  height: 80%;
+  list-style: none;
+}
+
+.KidushCardContainer:hover {
+  transform: rotateY(180deg);
+}

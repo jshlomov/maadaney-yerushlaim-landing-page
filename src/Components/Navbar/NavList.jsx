@@ -13,10 +13,10 @@ function NavList() {
           <a href="">אוכל לשבת</a>
         </li>
         <li>
-          <a href="">אירועים</a>
+          <a href="">קידושים</a>
         </li>
         <li>
-          <a href="">קידושים</a>
+          <a href="">אירועים</a>
         </li>
         <li>
           <a href="">סיטונאות</a>

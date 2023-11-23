@@ -1,11 +1,12 @@
 import "./App.css";
 import { useState } from "react";
 
-import Crousel from "./Components/About/Carousel";
 import FoodForShabat from "./Components/FoodForShabat/FoodForShabat";
 import Navbar from "./Components/Navbar/Navbar";
 import BackCrousel from "./Components/About/BackCarousel";
 import ContactDetails from "./Components/ContactDetails/ContactDetails";
+import KidushCard from "./Components/KidushSection/KidushCard";
+import KidushSection from "./Components/KidushSection/KidushSection";
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         {/* <Crousel /> */}
         <BackCrousel />
         <FoodForShabat />
+        <KidushSection />
         <ContactDetails />
       </div>
     </div>

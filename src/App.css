@@ -5,9 +5,42 @@
   transition: all 2s ease;
 }
 
-.reveal.active {
+.reveal .active {
   transform: translateY(0px);
   opacity: 1;
+}
+
+/* ////// up from bottom ///// */
+
+.activeUp{
+  animation: UpSenAnimation 2s ease;
+}
+
+@keyframes UpSenAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(250px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX (0px);
+  }
+}
+
+
+/* /////// opacity //////////// */
+
+.activeOpacity{
+  animation: OpacitySenAnimation 2s ease;
+}
+
+@keyframes OpacitySenAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* //////// animation for MobileNavList //////// */

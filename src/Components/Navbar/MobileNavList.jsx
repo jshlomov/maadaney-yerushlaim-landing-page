@@ -20,12 +20,12 @@ function MobileNavList(props) {
         </li>
         <li>
           <a href="" onClick={props.close}>
-            אירועים
+            קידושים
           </a>
         </li>
         <li>
           <a href="" onClick={props.close}>
-            קידושים
+            אירועים
           </a>
         </li>
         <li>

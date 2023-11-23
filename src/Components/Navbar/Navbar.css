@@ -51,7 +51,7 @@
   width: 50px;
   height: 60px;
   color: white;
-  filter: brightness(0.01) invert(0.9) sepia(0.1) hue-rotate(100deg)
+  filter: brightness(0.01) invert(0.99) sepia(0.1) hue-rotate(100deg)
     saturate(200%);
 }
 
